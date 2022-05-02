@@ -327,6 +327,9 @@ img {
 /* Places style end */
 
 /* Churches start */
+.church_cards {
+    margin-bottom: 139px;
+}
 .church_card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -351,16 +354,56 @@ img {
 
 }
 .church_card_link {
+    display: inline-block;
     margin-top: 50px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #006DFE;
-    background: url(/img/arrow.svg) no-repeat right center;
+    background: url(/img/arrow.svg) no-repeat 95% center;
+    transition: all 0.3s;
     max-width: 203px;
+    padding-right: 50px;
+    text-decoration: none;
+}
+.church_card_link:hover {
+    background: url(/img/arrow.svg) no-repeat right center;
+    color: #063d85;
+}
+/* Churches end */
+
+/* TodayTop styles start */
+.top_title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 63px;
+    position: relative;
+
+}
+.top_title::after {
+    display: block;
+    content: "";
+    width: 252px;
+    height: 4px;
+    background-color: #006DFE;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.top_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.top_card {
+    grid-column: span 1;
 }
 
-/* Churches end */
+
+
+
+/* TodayTop styles end */
+
 
 
 
