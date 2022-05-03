@@ -373,34 +373,57 @@ img {
 /* Churches end */
 
 /* TodayTop styles start */
+.top {
+    margin-bottom: 144px;
+}
 .top_title {
     font-weight: 500;
     font-size: 35px;
     line-height: 42px;
     margin-bottom: 63px;
     position: relative;
-
-}
-.top_title::after {
-    display: block;
-    content: "";
-    width: 252px;
-    height: 4px;
-    background-color: #006DFE;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 .top_cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
 }
 .top_card {
     grid-column: span 1;
+    position: relative;
 }
-
-
-
+.top_card_desc {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(21, 24, 36, 0.6);
+    padding: 16px 25px;
+}
+.top_card_title {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+.top_card_like {
+    
+}
+.top_card_under-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.top_card_button {
+    background-color: 006DFE;
+    color: white;
+    max-width: 118px;
+    height: 42px;
+    z-index: 5;
+}
 
 /* TodayTop styles end */
 
